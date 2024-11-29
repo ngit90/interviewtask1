@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="product-container">
+    <h2>YAY! It's BOGO</h2>
+
+    <!-- Option 1 -->
+    <div class="product-option">
+        <input type="radio" id="option-1" name="product-option" value="1" checked>
+      <label for="option-1" class="label1">
+        <div class="option-details">
+            <p class="unit">1 Unit</p>
+            <p class="discount">10% Off</p>
+            <p class="price">$10.00 USD</p>
+        </div>
+        <span class="part2">
+            <p style="width: 150px;font-size: 14px;">standard price</p>
+            <p class="part22"> $24.00 USD</p>
+        </span>
+    </label>
+    <p class="labels">size &nbsp;&nbsp;&nbsp;&nbsp; color</p>
+    <div class="size-options">
+      <label for="size-1">#1</label>
+      <select id="size-1">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+      <select id="size-2">
+        <option value="G">Green</option>
+        <option value="B">Blue</option>
+        <option value="R">Red</option>
+      </select>
+    </div>
+    <div class="size-options">
+      <label for="size-1">#2</label>
+      <select id="size-1">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+      <select id="size-2">
+        <option value="G">Green</option>
+        <option value="B">Blue</option>
+        <option value="R">Red</option>
+      </select>
+    </div>
+</div>
+
+    <!-- Option 2 -->
+    <div class="product-option">
+        <input type="radio" id="option-2" name="product-option" value="2">
+      <label for="option-2">
+        <div class="option-details">
+          <div class="badge">MOST POPULAR</div>
+          <p class="unit">2 Unit</p>
+            <p class="discount">20% Off</p>
+            <p class="price">$18.00 USD</p>
+        </div>
+        <span class="part2">
+            <p class="part22 " style="margin-left: 180px;"> $24.00 USD</p>
+        </span>
+    </label>
+            <p class="labels">size &nbsp;&nbsp;&nbsp;&nbsp; color</p>
+          <div class="size-options">
+            <label for="size-1">#1</label>
+            <select id="size-1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="size-2">
+              <option value="G">Green</option>
+              <option value="B">Blue</option>
+              <option value="R">Red</option>
+            </select>
+          </div>
+          <div class="size-options">
+            <label for="size-1">#2</label>
+            <select id="size-1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+            <select id="size-2">
+              <option value="G">Green</option>
+              <option value="B">Blue</option>
+              <option value="R">Red</option>
+            </select>
+          </div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="product-option">
+        <input type="radio" id="option-3" name="product-option" value="3">
+      <label for="option-3">
+        <div class="option-details">
+            <p class="unit">3 Unit</p>
+            <p class="discount">30% Off</p>
+            <p class="price">$24.00 USD</p>
+        </div>
+        <span class="part2">
+            <p class="part22 " style="margin-left: 180px;"> $24.00 USD</p>
+        </span>
+    </label>
+    <p class="labels">size &nbsp;&nbsp;&nbsp;&nbsp; color</p>
+    <div class="size-options">
+      <label for="size-1">#1</label>
+      <select id="size-1">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+      <select id="size-2">
+        <option value="G">Green</option>
+        <option value="B">Blue</option>
+        <option value="R">Red</option>
+      </select>
+    </div>
+    <div class="size-options">
+      <label for="size-1">#2</label>
+      <select id="size-1">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+      <select id="size-2">
+        <option value="G">Green</option>
+        <option value="B">Blue</option>
+        <option value="R">Red</option>
+      </select>
+    </div>
+</div>
+
+    <!-- Add to Cart -->
+    <div class="total-summary">
+      <p class="free">Free Delivery</p>
+      <p style="color: black; text-align: right;"><strong>Total: </strong><span id="total-price">$10.00 USD</span></p>
+      <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

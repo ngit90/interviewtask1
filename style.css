@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+  }
+  
+  .product-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #ff007f;
+  }
+  
+  .product-option {
+    display: flex;
+    flex-direction: column; /* Stack the radio option and size/color options */
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-bottom: 3px;
+    position: relative;
+    border: lightgray;
+    border-style: solid;
+  }
+  
+  .product-option input {
+    width: 18px; /* Default size for radio buttons */
+    accent-color: #ff007f; /* Customize the radio button color */
+    cursor: pointer;
+  }
+  
+  
+  
+  .option-details {
+    display: flex; 
+    gap: 20px; 
+  }
+  .part2{
+    display: flex;
+    align-items: left; 
+}
+.part22{
+    margin-left: 30px;
+    padding-left: 20px;
+    font-size: 12px;
+    text-decoration: line-through;
+
+}
+  
+  .unit {
+    width: 60px;
+    height: 10px;
+  }
+  
+  .discount {
+    background-color: #ff007f;
+    color: white; /* Styling for discount text */
+    font-size: 14px;
+    width: 60px;
+    height: 20px;
+  }
+  
+  .price {
+    font-weight: bold; /* Emphasize the price */
+    font-size: 14px;
+    margin-left: 30px;
+    width: 80px;
+    height: 20px;
+  }
+  
+  .badge {
+    background-color: #ff007f;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+  
+  /* Initially hide size options */
+  .size-options {
+    display: none;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    gap: 15px; /* Space between labels and dropdowns */
+  }
+  
+  .size-options label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .size-options select {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  /* Show the size options only when the corresponding radio button is checked */
+  .product-option input:checked ~ .size-options {
+    display: flex; /* Show size and color selectors when the radio is checked */
+  }
+  
+  
+  .free{
+    color: #ff007f;
+    text-align: left;
+  }
+  .add-to-cart {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e60070;
+  }
+  .labels{
+    display: none;
+    padding-left: 60px;
+  }
+  .product-option input:checked ~ .labels {
+    display: flex; /* Show size and color selectors when the radio is checked */
+  }
+.label1{
+    display: block;
+}
