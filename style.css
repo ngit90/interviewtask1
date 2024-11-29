@@ -10,10 +10,10 @@ body {
   
   .product-container {
     background: #fff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 280px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    width: 320px;
     text-align: center;
   }
   
@@ -24,9 +24,9 @@ body {
   .product-option {
     display: flex;
     flex-direction: column; /* Stack the radio option and size/color options */
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 5px;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
     position: relative;
     border: lightgray;
     border-style: solid;
@@ -38,43 +38,49 @@ body {
     cursor: pointer;
   }
   
-  
-  
   .option-details {
     display: flex; 
-    gap: 20px; 
+   
   }
+
   .part2{
     display: flex;
     align-items: left; 
+    position: absolute;
+    top: 25px;
 }
 .part22{
-    margin-left: 30px;
+    margin-left: 70px;
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: line-through;
+    color: gray;
 
 }
   
   .unit {
     width: 60px;
-    height: 10px;
+    height: 5px;
+    padding-top: 5px;
+    font-size: 12px;
   }
   
   .discount {
     background-color: #ff007f;
     color: white; /* Styling for discount text */
-    font-size: 14px;
-    width: 60px;
-    height: 20px;
+    font-size: 12px;
+    width: 80px;
+    padding-top: 4px;
+    height: 15px;
   }
   
   .price {
     font-weight: bold; /* Emphasize the price */
-    font-size: 14px;
-    margin-left: 30px;
-    width: 80px;
-    height: 20px;
+    font-size: 12px;
+    width: 100px;
+    margin-left: 50px;
+    padding-top: 5px;
+    height: 10px;
   }
   
   .badge {
@@ -89,7 +95,7 @@ body {
   }
   
   /* Initially hide size options */
-  .size-options {
+  .size-options1 {
     display: none;
     align-items: center;
     padding-left: 20px;
@@ -97,32 +103,53 @@ body {
     gap: 15px; /* Space between labels and dropdowns */
   }
   
-  .size-options label {
+  .size-options1 label {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
   }
   
-  .size-options select {
-    padding: 5px;
-    font-size: 14px;
+  .size-options1 select {
+    font-size: 12px;
   }
   
-  /* Show the size options only when the corresponding radio button is checked */
-  .product-option input:checked ~ .size-options {
-    display: flex; /* Show size and color selectors when the radio is checked */
+  .size-options1.active {
+    display: flex; /* Show when active */
+  }
+
+
+ /* Initially hide size options */
+ .size-options2 {
+    display: none;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    gap: 15px; /* Space between labels and dropdowns */
   }
   
+  .size-options2 label {
+    font-weight: bold;
+    font-size: 12px;
+  }
   
+  .size-options2 select {
+    font-size: 12px;
+  }
+  
+  .size-options2.active {
+    display: flex; /* Show when active */
+  }
+
   .free{
     color: #ff007f;
     text-align: left;
+    font-size: 12px;
   }
   .add-to-cart {
     background-color: #ff007f;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 5px;
     cursor: pointer;
     width: 100%;
     font-size: 16px;
@@ -134,9 +161,10 @@ body {
   .labels{
     display: none;
     padding-left: 60px;
+    font-size: 12px;
   }
-  .product-option input:checked ~ .labels {
-    display: flex; /* Show size and color selectors when the radio is checked */
+  .labels.active {
+    display: flex; /* Show when active */
   }
 .label1{
     display: block;
